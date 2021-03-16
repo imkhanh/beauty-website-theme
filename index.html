@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.
+    0">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Beauty Website Theme</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="#" class="logo">TheBeauty
+            </a>
+        <ul class="menu">
+            <li>
+                <a href="#" class="menu-item">Home</a>
+            </li>
+            <li>
+                <a href="#" class="menu-item">News</a>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Contact</a>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Blog</a>
+            </li>
+        </ul>
+        <form class="form">
+            <div class="btn-search">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+            <input type="text" placeholder="Search" class="search-input">
+        </form>
+    </nav>
+    <div class="page ">
+        <div class="left-side">
+            <div class="text">
+                //view collab
+            </div>
+            <div class="play">
+                <ion-icon name="play-outline"></ion-icon>
+            </div>
+            <div class="left-img">
+                <div class="upper-block"></div>
+                <img class="img-left" src="./images/img1.jpg" alt="">
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="wrapper">
+                <div class="block-top">
+                    <div class="wrapper-info">
+                        <div class="title">Trendy</div>
+                        <div class="subtitle">One of the best 2020</div>
+                        <div class="decription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, iure unde nesciunt explicabo expedita magnam fugiat doloremque nemo.
+                        </div>
+                    </div>
+                    <div class="social">
+                        <p>share now</p>
+                        <ul class="media">
+                            <li>
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrapper-img">
+                    <img class="img-right" src="./images/img2.jpg" alt="">
+                    <a href="#" class="more">More like this</a>
+                </div>
+                <div class="block-bottom"></div>
+            </div>
+        </div>
+        <div class="pages">
+            <a href="#" class="btn btn-prev">Prev </a>
+            <div class="page-num"> <span>1</span> / &nbsp; 0 4</div>
+            <a href="#" class="btn btn-next">Next </a>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script>
+        TweenMax.from('.left-side', 2, {
+            width: "0%",
+            dealy: 1,
+            ease: Expo.easeInOut,
+        });
+        TweenMax.from('.logo', 2, {
+            y: 20,
+            dealy: 2.5,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.staggerFrom('.menu > li ', 2, {
+            y: 20,
+            dealy: 4,
+            opacity: 0,
+            ease: Expo.easeInOut
+        }, 0.2);
+        TweenMax.from('form', 2, {
+            y: 20,
+            dealy: 4.2,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from('.text', 2, {
+            y: 200,
+            dealy: 3,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".social p", 2, {
+            delay: 3,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".media  li", 2, {
+            delay: 3.8,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        }, 0.1);
+        TweenMax.from(".img-left", 2, {
+            delay: 3,
+            x: -40,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".play", 2, {
+            delay: 3,
+            y: 50,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".wrapper-info > div", 2, {
+            delay: 3.8,
+            x: 100,
+            opacity: 0,
+            ease: Expo.easeInOut
+        }, 0.2);
+
+        TweenMax.from(".img-right", 2, {
+            delay: 3.2,
+            y: 50,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".more", 2, {
+            delay: 3.8,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".pages > a", 2, {
+            delay: 3.8,
+            x: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+        }, 0.2);
+        TweenMax.from(".page-num", 2, {
+            delay: 4.2,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+    </script>
+</body>
+
+</html>
